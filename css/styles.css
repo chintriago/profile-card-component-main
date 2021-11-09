@@ -3,7 +3,7 @@ body {
     background-color: var(--dark-cyan);
     background-image: url(../images/bg-pattern-top.svg),
         url(../images/bg-pattern-bottom.svg);
-    background-position: -750px -600px, 125px 375px;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
     background-repeat: no-repeat, no-repeat;
     box-sizing: border-box;
     font-family: "Kumbh Sans", sans-serif;
@@ -42,18 +42,6 @@ img {
     --dark-gray: hsl(0, 0%, 59%);
 }
 
-a,
-a:visited {
-    color: var(--very-dark-desaturated-blue);
-    font-weight: 700;
-    text-decoration: none;
-}
-
-footer a:nth-child(2),
-footer a:nth-child(2):visited {
-    color: var(--dark-grayish-blue);
-}
-
 /* MAIN */
 main {
     min-height: 100vh;
@@ -64,14 +52,14 @@ main {
 
 /* CARD */
 .card {
-    width: 330px;
+    width: 340px;
     border-radius: 15px;
 }
 
 /* TOP SECTION OF CARD */
 .card-top {
     width: 100%;
-    height: 150px;
+    height: 145px;
     border-radius: 15px 15px 0 0;
 }
 
@@ -99,7 +87,7 @@ main {
     border-radius: 50%;
     position: absolute;
     top: -50px;
-    left: 120px;
+    left: 125px;
 }
 
 .card-bottom-header {
@@ -166,23 +154,20 @@ hr {
 
 /* FOOTER */
 footer {
-    width: 345px;
+    width: 340px;
     text-align: center;
-    margin: auto;
+    margin: 0 auto;
     padding: 20px;
 }
-/* MEDIA QUERIES */
-@media only screen and (min-width: 1440px) {
-    /* GENERAL/RESET */
-    body {
-        background-image: url(../images/bg-pattern-top.svg),
-            url(../images/bg-pattern-bottom.svg);
-        background-position: -300px -475px, 675px 400px;
-        background-repeat: no-repeat, no-repeat;
-    }
 
-    /* CARD */
-    .card {
-        width: 350px;
-    }
+a,
+a:visited {
+    color: var(--very-dark-desaturated-blue);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+footer a:nth-child(2),
+footer a:nth-child(2):visited {
+    color: var(--dark-grayish-blue);
 }
